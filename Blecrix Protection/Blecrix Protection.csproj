@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE9E9F3B-35C6-410A-AEFF-EF15A0DEADE0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Blecrix_Protection</RootNamespace>
+    <AssemblyName>Blecrix Protection</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.1.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.1.4\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="performance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="performance.Designer.cs">
+      <DependentUpon>performance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="privacy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="privacy.Designer.cs">
+      <DependentUpon>privacy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="security.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="security.Designer.cs">
+      <DependentUpon>security.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="stat.Designer.cs">
+      <DependentUpon>stat.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="performance.resx">
+      <DependentUpon>performance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="privacy.resx">
+      <DependentUpon>privacy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="security.resx">
+      <DependentUpon>security.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stat.resx">
+      <DependentUpon>stat.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blectrixProtection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\health_checkup_500px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\health_checkup_outline_500px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security_configuration_512px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fingerprint_512px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocket_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocket1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\performance_imac_512px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vpn_status_bar_icon_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vpn_status_bar_icon_500px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vpn_status_bar_icon_144px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\best_seller_240px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\certificate_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google_alerts_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_male_208px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_480px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google_alerts_208px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell_208px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checked_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\protect_new_144px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_bold_new_512px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\launch_new_512px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\protect_new_144px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_bold_new_512px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\launch_new_512px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\launch_new_512px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_bold_new_512px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_bold_new_512px3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_144px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\protect_144px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_bold512px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\launch_512px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_208px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\virus_512px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spyware_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\antivirus_500px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quarantine_500px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update_left_rotation_512px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firewall_512px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online_payment_with_a_credit_card_512px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\website_512px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vpn_208px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_512px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shredder_512px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cookie_400px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cookie_512px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\privacy_400px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\privacy_144px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speed_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speed_512px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jetpack_500px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\broom_208px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battery_level_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compare_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\network_drive_500px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

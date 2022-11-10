@@ -1,0 +1,17 @@
+C:\Users\Mashxnisa\Documents\VS Projects\2022\Blecrix Protection\bin\Debug\Blecrix Protection.exe.config
+C:\Users\Mashxnisa\Documents\VS Projects\2022\Blecrix Protection\bin\Debug\Blecrix Protection.exe
+C:\Users\Mashxnisa\Documents\VS Projects\2022\Blecrix Protection\bin\Debug\Blecrix Protection.pdb
+C:\Users\Mashxnisa\Documents\VS Projects\2022\Blecrix Protection\bin\Debug\Guna.UI2.dll
+C:\Users\Mashxnisa\Documents\VS Projects\2022\Blecrix Protection\obj\Debug\Blecrix Protection.csproj.AssemblyReference.cache
+C:\Users\Mashxnisa\Documents\VS Projects\2022\Blecrix Protection\obj\Debug\Blecrix Protection.csproj.SuggestedBindingRedirects.cache
+C:\Users\Mashxnisa\Documents\VS Projects\2022\Blecrix Protection\obj\Debug\Blecrix_Protection.Form1.resources
+C:\Users\Mashxnisa\Documents\VS Projects\2022\Blecrix Protection\obj\Debug\Blecrix_Protection.performance.resources
+C:\Users\Mashxnisa\Documents\VS Projects\2022\Blecrix Protection\obj\Debug\Blecrix_Protection.privacy.resources
+C:\Users\Mashxnisa\Documents\VS Projects\2022\Blecrix Protection\obj\Debug\Blecrix_Protection.Properties.Resources.resources
+C:\Users\Mashxnisa\Documents\VS Projects\2022\Blecrix Protection\obj\Debug\Blecrix_Protection.security.resources
+C:\Users\Mashxnisa\Documents\VS Projects\2022\Blecrix Protection\obj\Debug\Blecrix_Protection.stat.resources
+C:\Users\Mashxnisa\Documents\VS Projects\2022\Blecrix Protection\obj\Debug\Blecrix Protection.csproj.GenerateResource.cache
+C:\Users\Mashxnisa\Documents\VS Projects\2022\Blecrix Protection\obj\Debug\Blecrix Protection.csproj.CoreCompileInputs.cache
+C:\Users\Mashxnisa\Documents\VS Projects\2022\Blecrix Protection\obj\Debug\Blecrix Protection.csproj.CopyComplete
+C:\Users\Mashxnisa\Documents\VS Projects\2022\Blecrix Protection\obj\Debug\Blecrix Protection.exe
+C:\Users\Mashxnisa\Documents\VS Projects\2022\Blecrix Protection\obj\Debug\Blecrix Protection.pdb
